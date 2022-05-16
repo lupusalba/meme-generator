@@ -54,3 +54,8 @@ header {
   text-indent: -5px;
 }
 
+.memeImage {
+  height: auto;
+  max-width: 100%;
+  margin: 36px auto;
+}
