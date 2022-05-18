@@ -1,25 +1,32 @@
-import memesData from "../memesData"
+import {useState} from 'react'
 
-const randomNum = () => {
-  return Math.floor(Math.random() * 99);
-}
+import memesData from "../memesData.js"
 
-const getMeme = () => {
-  return memesData["data"]["memes"][randomNum()]
-}
 
-let meme = getMeme();
 
 
 const Meme = () => {
+
+  
+  const [url, setNewUrl] = useState("")
+
+  function getMeme() {
+    const memesArray = memesData.data.memes
+    const randomNum = Math.floor(Math.random() * memesArray.length)
+    //const url = memesArray[randomNum].url
+    setNewUrl(memesArray[randomNum].url)
+  }
+
   return (
     <div>
       <div className="form">
         <input type="text" className="form-text" placeholder="Top text"/>
         <input type="text" className="form-text" placeholder="Bottom text"/>
-        <input type="submit" className="form-submit" />
+        <button className="form-submit" onClick={getMeme}>Get meme</button>
+            
       </div>
-      <img src={meme["url"]} alt={meme["name"]} className="memeImage" />
+      <img src={url} alt={url} className="memeImage" />;
+      
     </div>
   )
 }
