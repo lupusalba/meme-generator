@@ -22,7 +22,7 @@ header {
   height: 65px;
   width: 100%;
   display: flex;
-  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  background: linear-gradient(90deg, #03045e 1.18%, #023e8a 100%);
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
@@ -47,7 +47,7 @@ header {
 
 .form-submit {
   grid-column: 1 / -1;
-  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  background: linear-gradient(90deg, #03045e 1.18%, #023e8a 100%);
   color: #fff;
   border: none;
   cursor: pointer;
