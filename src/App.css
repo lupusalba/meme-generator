@@ -3,15 +3,14 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #212529;
   color: #fff;
 }
 
 .wrapper {
-  width: 550px;
+  width: 650px;
   height: auto;
   margin: 50px auto;
-  border: 1px solid #eee;
 }
 
 .content-container {
@@ -22,7 +21,7 @@ header {
   height: 65px;
   width: 100%;
   display: flex;
-  background: linear-gradient(90deg, #03045e 1.18%, #023e8a 100%);
+  background: linear-gradient(90deg, #343a40 1.18%, #495057 100%);
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
@@ -47,7 +46,7 @@ header {
 
 .form-submit {
   grid-column: 1 / -1;
-  background: linear-gradient(90deg, #03045e 1.18%, #023e8a 100%);
+  background: linear-gradient(90deg, #343a40 1.18%, #495057 100%);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -57,6 +56,7 @@ header {
 .memeImage {
   height: auto;
   max-width: 100%;
+  width: 650px;
   margin: 36px auto;
 }
 
